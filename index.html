@@ -7,7 +7,7 @@
 <meta name="description" content="Vendé los stands de tu feria online: mapa del predio, postulación de expositores, cupo por rubro y cobro con Mercado Pago.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://feriapp-beta.vercel.app/">
-<meta property="og:title" content="Feriapp: vendé los stands de tu feria online">
+<meta property="og:title" content="Ferialo: vendé los stands de tu feria online">
 <meta property="og:description" content="Mapa del predio, postulación de expositores, cupo por rubro y cobro con Mercado Pago. Mirá la demo.">
 <meta property="og:image" content="https://feriapp-beta.vercel.app/og.png">
 <meta property="og:image:width" content="1200">
@@ -15,7 +15,7 @@
 <meta property="og:locale" content="es_AR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://feriapp-beta.vercel.app/og.png">
-<title>Feriapp Sabores de Palermo</title>
+<title>Ferialo Sabores de Palermo</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800;900&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
@@ -137,7 +137,7 @@ input[type=text],select{font:15px var(--f-body);padding:9px 10px;border:1px soli
 <div class="wrap">
   <header class="top">
     <div>
-      <div class="brand"><span class="f">feri</span>app <span class="demo-tag">Demo · datos de ejemplo</span></div>
+      <div class="brand"><span class="f">feria</span>lo <span class="demo-tag">Demo · datos de ejemplo</span></div>
       <h1>Feria Sabores de Palermo</h1>
       <div class="meta">
         <span>Sáb 12 y dom 13 de diciembre · 12 a 23 h</span>
@@ -429,7 +429,7 @@ document.getElementById("view-org").addEventListener("click",e=>{
   const s = S(b.dataset.id);
   if(b.dataset.a==="ok"){ s.status="approved"; toast(`Aprobado. Le enviamos a ${s.name} el link de pago.`); }
   if(b.dataset.a==="no"){ Object.assign(s,{status:"free",name:undefined,rubro:undefined,extras:[]}); toast("Postulación rechazada. El stand vuelve a estar disponible."); }
-  if(b.dataset.a==="pay"){ s.status="paid"; toast(`${s.name} pagó ${money(totalOf(s))}. Comisión Feriapp: ${money(totalOf(s)*FEE)}.`); }
+  if(b.dataset.a==="pay"){ s.status="paid"; toast(`${s.name} pagó ${money(totalOf(s))}. Comisión Ferialo: ${money(totalOf(s)*FEE)}.`); }
   renderOrg(); drawStands(); renderPanel();
 });
 
